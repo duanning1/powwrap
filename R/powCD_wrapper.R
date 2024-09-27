@@ -1,4 +1,5 @@
 # We need number of tuning values of q, ''nq''. The default of ''nq'' should be 1!
+#' @export
 powCD_wrapper <- function(x, y, q = 1, nlambda, nq = 1) {
   # Standardize the matrix x
   x_standardized <- apply(x, 2, function(z) {(z)/(sqrt(mean(z^2) - mean(z)^2))})
