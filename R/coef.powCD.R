@@ -1,3 +1,4 @@
+#' @export
 coef.powCD <- function(out) {
   # Extract the 'coeff' matrix from the 'out' object
   coeff_matrix <- out[["coeff"]]

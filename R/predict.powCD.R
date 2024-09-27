@@ -1,3 +1,4 @@
+#' @export
 predict.powCD <- function(out, xnew) {
   # Perform matrix multiplication between new data and the coefficient matrix
   prediction <- xnew %*% out[["coeff"]]
