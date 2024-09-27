@@ -25,5 +25,6 @@ x = matrix(rnorm(100), ncol = 10)
 y = rnorm(10)
 out = powCD_wrapper(x, y, nlambda = 10, nq = 5)
 coefficients = coef.powCD(out)
-predictions = predict.powCD(out, x)
+newx = matrix(rnorm(100), ncol = 10)
+predictions = predict.powCD(out, newx)
 ```
