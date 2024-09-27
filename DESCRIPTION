@@ -1,11 +1,16 @@
 Package: powwrap
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Wrapper functions for the powCD function in the package powopt
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Ning Duan
+Maintainer: The package maintainer <nduan@umass.edu>
+Description: This package contains three functions.
+    1. powCD_wrapper: a wrapper function for the powCD function in the package powopt. 
+    It takes in a sequence of lambda values and a sequence of q values. 
+    It returns an object of class powCD that contains the beta coefficients and the generated sequence of lambda values.
+    2. coef.powCD: returns the beta coefficients from the powCD object.
+    3. pred.powCD: returns the predicted values from the powCD object given a new data set.
 Encoding: UTF-8
 LazyData: true
+Remotes: maryclare/powopt
+
